@@ -46,12 +46,12 @@
           </td>
           <td>
             <div class="text-center" @click="editTask(index)">
-              <span class="fa fa-pen"></span>
+              <span id="clickable" class="fa fa-pen"></span>
             </div>
           </td>
           <td>
             <div class="text-center" @click="deleteTask(index)">
-              <span class="fa fa-trash"></span>
+              <span id="clickable" class="fa fa-trash"></span>
             </div>
           </td>
         </tr>
@@ -123,6 +123,9 @@ export default {
 </script>
 <style scoped>
 .pointer {
+  cursor: pointer;
+}
+#clickable {
   cursor: pointer;
 }
 .finished {
